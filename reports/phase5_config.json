@@ -1,0 +1,149 @@
+{
+  "TICK": 0.05,
+  "INITIAL_CAPITAL": 1000000.0,
+  "MAX_DAILY_LOSS": 20000.0,
+  "COOLDOWN_S": 15,
+  "MIN_HOLD_S": 3,
+  "PER_TRADE_BUDGET": 500.0,
+  "P_FILL_MIN_PASSIVE": 0.15,
+  "MAX_PCT_DEPTH": 0.4,
+  "MAX_SIGNALS_PER_DAY": 300,
+  "MAX_LONG_SHORT_RATIO": 2.5,
+  "HARD_GATE_REGIMES": [
+    4,
+    5
+  ],
+  "regime_tau": {
+    "0": {
+      "tau_passive": 0.029750000000000002,
+      "tau_take": 0.05,
+      "edge_floor": 0.03,
+      "H": 20,
+      "passive_discount": 0.85,
+      "take_mult": 2.5,
+      "sprd_cap_t": 4,
+      "n": 271,
+      "prec": 0.8367346938775511
+    },
+    "1": {
+      "tau_passive": 0.017099999999999997,
+      "tau_take": 0.035,
+      "edge_floor": 0.03,
+      "H": 25,
+      "passive_discount": 0.95,
+      "take_mult": 2.8,
+      "sprd_cap_t": 4,
+      "n": 264,
+      "prec": 1.0
+    },
+    "2": {
+      "tau_passive": 0.007200000000000001,
+      "tau_take": 0.018,
+      "edge_floor": 0.1,
+      "H": 30,
+      "passive_discount": 0.9,
+      "take_mult": 3.0,
+      "sprd_cap_t": 5,
+      "n": 741,
+      "prec": 0.8157894736842105
+    },
+    "3": {
+      "tau_passive": 0.013200000000000002,
+      "tau_take": 0.025,
+      "edge_floor": 0.06,
+      "H": 45,
+      "passive_discount": 1.1,
+      "take_mult": 3.5,
+      "sprd_cap_t": 8,
+      "n": 173,
+      "prec": 0.8461538461538461
+    },
+    "4": {
+      "tau_passive": 9.0,
+      "tau_take": 9.0,
+      "edge_floor": 9.0,
+      "H": 40,
+      "passive_discount": 1000000000.0,
+      "take_mult": 1000000000.0,
+      "sprd_cap_t": 0,
+      "n": 0,
+      "prec": 0.0
+    },
+    "5": {
+      "tau_passive": 9.0,
+      "tau_take": 9.0,
+      "edge_floor": 9.0,
+      "H": 0,
+      "passive_discount": 1000000000.0,
+      "take_mult": 1000000000.0,
+      "sprd_cap_t": 0,
+      "n": 0,
+      "prec": 0.0
+    }
+  },
+  "REGIME_HPARAMS": {
+    "0": {
+      "H": 20,
+      "passive_discount": 0.85,
+      "take_mult": 2.5,
+      "sprd_cap_t": 4
+    },
+    "1": {
+      "H": 25,
+      "passive_discount": 0.95,
+      "take_mult": 2.8,
+      "sprd_cap_t": 4
+    },
+    "2": {
+      "H": 30,
+      "passive_discount": 0.9,
+      "take_mult": 3.0,
+      "sprd_cap_t": 5
+    },
+    "3": {
+      "H": 45,
+      "passive_discount": 1.1,
+      "take_mult": 3.5,
+      "sprd_cap_t": 8
+    },
+    "4": {
+      "H": 40,
+      "passive_discount": 1000000000.0,
+      "take_mult": 1000000000.0,
+      "sprd_cap_t": 0
+    },
+    "5": {
+      "H": 0,
+      "passive_discount": 1000000000.0,
+      "take_mult": 1000000000.0,
+      "sprd_cap_t": 0
+    }
+  },
+  "TAU_GRID_PASSIVE": [
+    0.003,
+    0.005,
+    0.008,
+    0.012,
+    0.018,
+    0.025,
+    0.035
+  ],
+  "TAU_GRID_TAKE": [
+    0.008,
+    0.012,
+    0.018,
+    0.025,
+    0.035,
+    0.05
+  ],
+  "EDGE_FLOOR_GRID": [
+    0.0,
+    0.03,
+    0.06,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "N_MIN_PER_REG": 200,
+  "N_MAX_PER_REG": 5000
+}
